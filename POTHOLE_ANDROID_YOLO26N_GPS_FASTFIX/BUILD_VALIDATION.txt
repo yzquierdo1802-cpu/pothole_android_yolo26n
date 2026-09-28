@@ -1,0 +1,16 @@
+V16 PROFESSIONAL UI — VALIDACIÓN
+================================
+
+Validaciones realizadas:
+- XML de recursos y AndroidManifest: OK.
+- tools/verify_project.py: OK.
+- Integridad SHA-256 modelo 416: OK.
+- Integridad SHA-256 modelo 512: OK.
+- IDs requeridos por MainActivity/ReportsActivity/SettingsActivity/CalibrationActivity: conservados.
+- Miniaturas de reportes: carga asíncrona + caché implementada.
+- Room/CSV/evidencias científicas V15: preservados.
+- Tracking/ROI/416+512: preservados.
+
+Build Gradle completo:
+NO EJECUTADO en este entorno porque gradle-wrapper necesita descargar Gradle 8.11.1 desde services.gradle.org y el entorno no tiene salida de red.
+Compilar en Android Studio con Gradle JVM 17 o 21.

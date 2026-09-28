@@ -1,0 +1,32 @@
+# Android / Gradle
+.gradle/
+.kotlin/
+**/build/
+build/
+
+# Android Studio
+.idea/
+*.iml
+
+# Local configuration
+local.properties
+
+# APK / Bundles
+*.apk
+*.aab
+*.ap_
+
+# Native
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.temp
+
+# Windows / macOS
+Thumbs.db
+.DS_Store

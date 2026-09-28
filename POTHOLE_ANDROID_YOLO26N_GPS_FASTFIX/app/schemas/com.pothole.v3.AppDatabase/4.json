@@ -1,0 +1,366 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "0fccd4dd7e41a27c593d65855247e061",
+    "entities": [
+      {
+        "tableName": "pothole_reports",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`eventId` TEXT NOT NULL, `timestampMillis` INTEGER NOT NULL, `timestampIso` TEXT NOT NULL, `sessionId` TEXT NOT NULL, `trackId` INTEGER NOT NULL, `severity` TEXT NOT NULL, `scoreAi` REAL NOT NULL, `rawScoreAi` REAL NOT NULL, `maskAreaRatio` REAL NOT NULL, `compensatedAreaRatio` REAL NOT NULL, `perspectiveFactor` REAL NOT NULL, `frameWidth` INTEGER NOT NULL, `frameHeight` INTEGER NOT NULL, `orientation` TEXT NOT NULL, `inferenceMs` INTEGER NOT NULL, `totalMs` INTEGER NOT NULL, `imageName` TEXT NOT NULL, `imageUri` TEXT NOT NULL, `detectionSource` TEXT NOT NULL, `distanceBand` TEXT NOT NULL, `modelInput` INTEGER NOT NULL, `appVersion` TEXT NOT NULL, `firstSeenTimestampMillis` INTEGER NOT NULL DEFAULT 0, `firstSeenTimestampIso` TEXT NOT NULL DEFAULT '', `confirmedTimestampMillis` INTEGER NOT NULL DEFAULT 0, `confirmedTimestampIso` TEXT NOT NULL DEFAULT '', `firstSeenSource` TEXT NOT NULL DEFAULT 'UNKNOWN', `firstSeenDistanceBand` TEXT NOT NULL DEFAULT 'UNKNOWN', `confirmedDistanceBand` TEXT NOT NULL DEFAULT 'UNKNOWN', `confirmationDelayMs` INTEGER NOT NULL DEFAULT 0, `calibrationHorizon` REAL NOT NULL, `phoneHeightCm` INTEGER NOT NULL, `latitude` REAL, `longitude` REAL, `locationAccuracyM` REAL, `locationTimestampMillis` INTEGER NOT NULL DEFAULT 0, `locationAgeMs` INTEGER NOT NULL DEFAULT 0, `locationProvider` TEXT NOT NULL DEFAULT '', `placeName` TEXT NOT NULL DEFAULT '', `addressLine` TEXT NOT NULL DEFAULT '', `locality` TEXT NOT NULL DEFAULT '', `subAdminArea` TEXT NOT NULL DEFAULT '', `adminArea` TEXT NOT NULL DEFAULT '', `countryName` TEXT NOT NULL DEFAULT '', `maskAreaPx` INTEGER NOT NULL DEFAULT 0, `centroidX` REAL NOT NULL DEFAULT 0, `centroidY` REAL NOT NULL DEFAULT 0, `originalImageName` TEXT NOT NULL DEFAULT '', `originalImageUri` TEXT NOT NULL DEFAULT '', `maskImageName` TEXT NOT NULL DEFAULT '', `maskImageUri` TEXT NOT NULL DEFAULT '', `overlayImageName` TEXT NOT NULL DEFAULT '', `overlayImageUri` TEXT NOT NULL DEFAULT '', PRIMARY KEY(`eventId`))",
+        "fields": [
+          {
+            "fieldPath": "eventId",
+            "columnName": "eventId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampMillis",
+            "columnName": "timestampMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestampIso",
+            "columnName": "timestampIso",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sessionId",
+            "columnName": "sessionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trackId",
+            "columnName": "trackId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "severity",
+            "columnName": "severity",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scoreAi",
+            "columnName": "scoreAi",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rawScoreAi",
+            "columnName": "rawScoreAi",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maskAreaRatio",
+            "columnName": "maskAreaRatio",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compensatedAreaRatio",
+            "columnName": "compensatedAreaRatio",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perspectiveFactor",
+            "columnName": "perspectiveFactor",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frameWidth",
+            "columnName": "frameWidth",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frameHeight",
+            "columnName": "frameHeight",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orientation",
+            "columnName": "orientation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inferenceMs",
+            "columnName": "inferenceMs",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalMs",
+            "columnName": "totalMs",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageName",
+            "columnName": "imageName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUri",
+            "columnName": "imageUri",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "detectionSource",
+            "columnName": "detectionSource",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "distanceBand",
+            "columnName": "distanceBand",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modelInput",
+            "columnName": "modelInput",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appVersion",
+            "columnName": "appVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstSeenTimestampMillis",
+            "columnName": "firstSeenTimestampMillis",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "firstSeenTimestampIso",
+            "columnName": "firstSeenTimestampIso",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "confirmedTimestampMillis",
+            "columnName": "confirmedTimestampMillis",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "confirmedTimestampIso",
+            "columnName": "confirmedTimestampIso",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "firstSeenSource",
+            "columnName": "firstSeenSource",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNKNOWN'"
+          },
+          {
+            "fieldPath": "firstSeenDistanceBand",
+            "columnName": "firstSeenDistanceBand",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNKNOWN'"
+          },
+          {
+            "fieldPath": "confirmedDistanceBand",
+            "columnName": "confirmedDistanceBand",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'UNKNOWN'"
+          },
+          {
+            "fieldPath": "confirmationDelayMs",
+            "columnName": "confirmationDelayMs",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "calibrationHorizon",
+            "columnName": "calibrationHorizon",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneHeightCm",
+            "columnName": "phoneHeightCm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "locationAccuracyM",
+            "columnName": "locationAccuracyM",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "locationTimestampMillis",
+            "columnName": "locationTimestampMillis",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "locationAgeMs",
+            "columnName": "locationAgeMs",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "locationProvider",
+            "columnName": "locationProvider",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "placeName",
+            "columnName": "placeName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "addressLine",
+            "columnName": "addressLine",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "locality",
+            "columnName": "locality",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "subAdminArea",
+            "columnName": "subAdminArea",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "adminArea",
+            "columnName": "adminArea",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "countryName",
+            "columnName": "countryName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "maskAreaPx",
+            "columnName": "maskAreaPx",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "centroidX",
+            "columnName": "centroidX",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "centroidY",
+            "columnName": "centroidY",
+            "affinity": "REAL",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "originalImageName",
+            "columnName": "originalImageName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "originalImageUri",
+            "columnName": "originalImageUri",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "maskImageName",
+            "columnName": "maskImageName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "maskImageUri",
+            "columnName": "maskImageUri",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "overlayImageName",
+            "columnName": "overlayImageName",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "overlayImageUri",
+            "columnName": "overlayImageUri",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "eventId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0fccd4dd7e41a27c593d65855247e061')"
+    ]
+  }
+}

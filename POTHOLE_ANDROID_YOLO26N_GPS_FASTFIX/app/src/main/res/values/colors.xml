@@ -1,0 +1,17 @@
+<resources>
+    <color name="bg_app">#070C11</color>
+    <color name="bg_panel">#E6111820</color>
+    <color name="bg_card">#151F28</color>
+    <color name="bg_card_alt">#0F171E</color>
+    <color name="stroke_soft">#2A3A45</color>
+    <color name="text_primary">#F4F7F9</color>
+    <color name="text_secondary">#9AA9B6</color>
+    <color name="accent_cyan">#22D3EE</color>
+    <color name="accent_cyan_dark">#073D45</color>
+    <color name="accent_pink">#FF5DAA</color>
+    <color name="severity_low">#35E59A</color>
+    <color name="severity_medium">#FFD44F</color>
+    <color name="severity_high">#FF667A</color>
+    <color name="danger">#FF5B64</color>
+    <color name="cream">#F5F1E8</color>
+</resources>

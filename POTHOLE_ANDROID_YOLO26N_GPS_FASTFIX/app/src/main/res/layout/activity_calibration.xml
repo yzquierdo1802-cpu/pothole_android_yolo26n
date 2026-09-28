@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.14"
+            android:text="BACHES PE · PERSPECTIVA"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Calibración de cámara"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Ajusta la geometría del parabrisas para que el análisis de 10–20 m y la compensación de perspectiva sean más consistentes."
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/stroke_soft"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Horizonte de la vía"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+                <SeekBar
+                    android:id="@+id/horizonSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:max="45"
+                    android:progressTint="@color/accent_cyan"
+                    android:thumbTint="@color/accent_cyan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Centro del carril"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+                <SeekBar
+                    android:id="@+id/centerSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:max="40"
+                    android:progressTint="@color/accent_cyan"
+                    android:thumbTint="@color/accent_cyan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Altura del teléfono"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+                <SeekBar
+                    android:id="@+id/heightSeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:max="160"
+                    android:progressTint="@color/accent_cyan"
+                    android:thumbTint="@color/accent_cyan" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/bg_card_alt"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#243743"
+            app:strokeWidth="1dp">
+            <TextView
+                android:id="@+id/calibrationSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calibrationSaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="@color/cream"
+            android:text="Guardar calibración"
+            android:textAllCaps="false"
+            android:textColor="#0A1015"
+            android:textStyle="bold"
+            app:cornerRadius="22dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calibrationResetButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:text="Restablecer"
+            android:textAllCaps="false"
+            android:textColor="@color/text_secondary"
+            app:cornerRadius="20dp"
+            app:strokeColor="#354A56" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calibrationCancelButton"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="@color/text_secondary" />
+    </LinearLayout>
+</ScrollView>

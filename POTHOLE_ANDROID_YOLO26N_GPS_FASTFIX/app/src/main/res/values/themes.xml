@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.PotholeV3" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@color/bg_app</item>
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorSecondary">@color/accent_pink</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/bg_app</item>
+        <item name="android:navigationBarColor">@color/bg_app</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>
