@@ -11,7 +11,7 @@ https://github.com/yzquierdo1802-cpu/pothole_android_yolo26n
 Project folder: `POTHOLE_ANDROID_YOLO26N_GPS_FASTFIX/`
 
 Dataset / test split: https://github.com/BenavidezYzquierdoSanchez/data_pothole  
-DOI: https://doi.org/10.5281/zenodo.23018021
+DOI: https://doi.org/10.5281/zenodo.23028710
 
 ## What the app does
 
